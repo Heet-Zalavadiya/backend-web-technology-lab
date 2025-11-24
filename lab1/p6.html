@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = prompt("n:");
+        let temp = n;
+        let sum = 0;
+        let count = 0;
+        
+        while (temp > 0) {
+            let digit = temp % 10;
+            temp = Math.floor(temp / 10);
+            count++;
+        }
+        
+        temp = n;
+       
+        while (temp > 0) {
+            let digit = temp % 10;
+            sum += Math.pow(digit, count);
+            temp = Math.floor(temp / 10);
+        }
+       
+        if (sum == n) {
+            alert("Armstrong");
+        } else {
+            alert("Not Armstrong");
+        }
+    </script>
+</body>
+
+</html>

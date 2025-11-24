@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = prompt("n:");
+        let temp = n
+        let rev = 0
+        while(temp > 0) {
+            let digit = temp % 10;
+            rev = rev * 10 + digit;
+            temp = Math.floor(temp / 10);
+        }
+        if (rev == n) {
+            alert("Palindrome");
+        } else {
+            alert("Not Palindrome");
+        }
+    </script>
+</body>
+
+</html>
