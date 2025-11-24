@@ -1,2 +1,2 @@
 # backend-web-technology-lab
-This Repository contains my lab work of this subject.
+This repository contains my lab work of this subject.
