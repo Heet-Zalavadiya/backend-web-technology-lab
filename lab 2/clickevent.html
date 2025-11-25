@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+        });
+
+        document.addEventListener("mousedown", (e) => {
+            if (e.button == 0) {
+                console.log("left click");
+            } else if (e.button == 1) {
+                console.log("scroll click");
+            } else {
+                console.log("right click");
+            }
+        });
+
+    </script>
+</body>
+
+</html>

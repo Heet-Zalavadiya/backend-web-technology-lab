@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="checkbox" value="101" onclick="showSelected()"> 101<br>
+    <input type="checkbox" value="102" onclick="showSelected()"> 102<br>
+    <input type="checkbox" value="103" onclick="showSelected()"> 103<br>
+
+    <p id="out"></p>
+
+    <script>
+        function showSelected() {
+            let checked = document.querySelectorAll('input[type="checkbox"]:checked');
+            let values = [...checked].map(c => c.value);
+            document.getElementById("out").innerText = values.join(", ");
+        }
+    </script>
+</body>
+
+</html>
