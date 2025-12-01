@@ -1,0 +1,11 @@
+{
+  "name": "npm-lab-1",
+  "version": "1.0.0",
+  "description": "This is my first use of npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm i"
+  },
+  "author": "heet",
+  "license": "ISC"
+}
