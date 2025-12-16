@@ -1,0 +1,106 @@
+# --------------------
+# OS files
+# --------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# --------------------
+# Editor / IDE files
+# --------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.log
+
+# --------------------
+# Node / JavaScript
+# --------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+build/
+
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+
+# --------------------
+# Java / JVM
+# --------------------
+*.class
+*.jar
+*.war
+*.ear
+target/
+.gradle/
+
+# --------------------
+# C / C++
+# --------------------
+*.o
+*.obj
+*.exe
+*.out
+*.app
+
+# --------------------
+# Logs & runtime files
+# --------------------
+logs/
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# --------------------
+# Environment variables
+# --------------------
+.env
+.env.*
+!.env.example
+
+# --------------------
+# Coverage / test output
+# --------------------
+coverage/
+*.lcov
+.nyc_output/
+
+# --------------------
+# Temporary files
+# --------------------
+tmp/
+temp/
+.cache/
+
+# --------------------
+# Archives
+# --------------------
+*.zip
+*.tar
+*.tar.gz
+*.rar
