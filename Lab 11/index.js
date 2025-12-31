@@ -6,7 +6,7 @@ const { default: routerFaculty } = require('./routes/faculty')
 
 const app = express()
 
-mongoose.connect('mongodb+srv://Mr_D:dhruvkakkad999@backend.msejwff.mongodb.net/SMMS').then(() => {
+mongoose.connect('MONGO_URL').then(() => {
     console.log("MongoDB Connected")
 }).catch((err) => {
     console.log(err);
@@ -14,8 +14,8 @@ mongoose.connect('mongodb+srv://Mr_D:dhruvkakkad999@backend.msejwff.mongodb.net/
 
 app.use(express.json())
 
-app.use('/faculty',require('./routes/faculty'))
+app.use('/faculty', require('./routes/faculty'))
 
-app.listen(3000,()=>{
+app.listen(3000, () => {
     console.log("Server started at 3000")
 })
